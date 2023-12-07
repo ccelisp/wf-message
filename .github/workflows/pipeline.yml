@@ -17,7 +17,7 @@ jobs:
               echo "Activa WF Padre"
 
         -  name: Llamar WF Hijo
-           uses: convictional/trigger-workflow-and-wait@v.1.6.1
+           uses: convictional/trigger-workflow-and-wait@v1.6.1
            with:
                owner: ccelisp
                repo: repo-hijo
