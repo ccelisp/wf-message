@@ -1,4 +1,2 @@
 # wf-message
 
-Hola
-Adios
