@@ -9,8 +9,6 @@ jobs:
 
     call-workflow-passing-data:
         uses: ccelisp/repo-hijo/.github/workflows/pipeline.yml@main
-        secrets:
-          envPAT: ${{ secrets.PERSONAL_TOKEN }}
 
     build:
         runs-on: ubuntu-latest
