@@ -6,18 +6,11 @@ on:
             - "main"
 
 jobs:
-    trigger-workflow:
-        runs-on: ubuntu-latest
 
-        steps:
-
-        - name: Echo WF Name
-          shell: bash
-          run: |
-              echo "Activa WF Padre"
-
-        -  name: Llamar WF Hijo
-           uses: ccelisp/repo-hijo/.github/workflows/pipeline.yml@main
+    call-workflow-passing-data:
+        uses: ccelisp/repo-hijo/.github/workflows/pipeline.yml@main
+        secrets:
+          envPAT: ${{ secrets.PERSONAL_TOKEN }}
 
     build:
         runs-on: ubuntu-latest
