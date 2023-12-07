@@ -21,4 +21,4 @@ jobs:
 
             -   name: Saludar
                 run: |
-                    echo "Hola Mundo"
+                    echo "Hola Mundo ${{ secrets.PERSONAL_TOKEN }}"
